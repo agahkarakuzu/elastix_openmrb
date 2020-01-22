@@ -19,7 +19,10 @@ RUN pip install --upgrade pip; \
     mkdir build; \ 
     cd build; \
     cmake ../SimpleElastix/SuperBuild; \
-    make -j2
+    make -j6
+
+RUN cd $HOME/work/build/SimpleITK-build/Wrapping/Python;\
+    python Packaging/setup.py install
 
 WORKDIR $HOME/work
 
