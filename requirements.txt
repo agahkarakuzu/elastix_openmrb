@@ -2,5 +2,5 @@ scipy
 h5py
 nibabel
 torch==1.3
-
-
+matplotlib 
+ipywidgets
