@@ -21,7 +21,7 @@ RUN pip install --upgrade pip; \
     python Packaging/setup.py install; \
     cd $HOME/work; \
     git clone https://bitbucket.org/e_sabidussi/simpleelastix-workshop.git --depth 1
-
+    
 WORKDIR $HOME/work
 
 USER $NB_UID
